@@ -1,7 +1,7 @@
 {
   "name": "hubot-mitch",
   "description": "A hubot plugin that will spit out Mitch Hedberg quotes",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Nretnil Kram <signkram@gmail.com>",
   "license": "MIT",
   "keywords": [

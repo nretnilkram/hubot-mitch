@@ -31,3 +31,13 @@ describe 'hubot-mitch', ->
 		expect(@robot.respond).to.not.have.been.calledWith sinon.match( (val) -> 
 			val.test /mitch/
 		)
+
+	it 'does NOT responds to "mitchme"', ->
+		expect(@robot.respond).to.not.have.been.calledWith sinon.match( (val) -> 
+			val.test /mitchme/
+		)
+
+	it 'does NOT responds to "mitchbomb"', ->
+		expect(@robot.respond).to.not.have.been.calledWith sinon.match( (val) -> 
+			val.test /mitchbomb/
+		)
