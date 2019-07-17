@@ -25,7 +25,7 @@ module.exports = (robot) ->
     count = if msg.match[1]? then parseInt(msg.match[1], 10) else 5
     msg.send msg.random mitch['quotes'] for i in [1..count]
 
-  if process.env.HUBOT_MITCH_HEAR
+  if process.env.HUBOT_MITCH_HEAR == "true"
     robot.hear /^mitch me/i, (msg) ->
       msg.send msg.random mitch['quotes']
 
