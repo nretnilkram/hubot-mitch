@@ -1,8 +1,9 @@
-const chai = require('chai');
-const sinon = require('sinon');
-chai.use(require('sinon-chai'));
+import { expect, use } from 'chai';
+import sinon from 'sinon';
+import sinonChai from 'sinon-chai';
+import mitchModule from '../src/mitch.js';
 
-const expect = chai.expect;
+use(sinonChai);
 
 describe('hubot-mitch', () => {
   beforeEach(function() {
@@ -11,7 +12,7 @@ describe('hubot-mitch', () => {
       hear: sinon.spy()
     };
 
-    require('../src/mitch')(this.robot);
+    mitchModule(this.robot);
   });
 
   it('responds to "mitch me"', function() {

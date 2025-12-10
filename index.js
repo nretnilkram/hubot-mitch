@@ -1,7 +1,12 @@
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
 
-module.exports = (robot, scripts) => {
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+export default (robot, scripts) => {
   const scriptsPath = path.resolve(__dirname, 'src');
   
   if (fs.existsSync(scriptsPath)) {

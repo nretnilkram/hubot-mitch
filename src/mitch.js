@@ -14,9 +14,16 @@
 // Author:
 //   nrentnilkram
 
-const mitch = require('./data/mitch.json');
+import fs from 'fs';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
 
-module.exports = (robot) => {
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+const mitch = JSON.parse(fs.readFileSync(join(__dirname, 'data/mitch.json'), 'utf8'));
+
+export default (robot) => {
   robot.respond(/mitch me/i, (msg) => {
     msg.send(msg.random(mitch.quotes));
   });

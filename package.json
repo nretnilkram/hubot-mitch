@@ -4,6 +4,7 @@
   "version": "25.12.10",
   "author": "Nretnil Kram <signkram@gmail.com>",
   "license": "MIT",
+  "type": "module",
   "keywords": [
     "hubot",
     "hubot-scripts"
@@ -17,12 +18,12 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "chai": "^4.5.0",
+    "chai": "^6.2.1",
     "hubot": "^13.1.4",
     "matchdep": "~2.0.0",
     "mocha": "^11.7.5",
     "sinon": "^21.0.0",
-    "sinon-chai": "^3.7.0"
+    "sinon-chai": "^4.0.1"
   },
   "main": "index.js",
   "scripts": {
