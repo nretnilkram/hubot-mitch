@@ -1,7 +1,7 @@
 {
   "name": "hubot-mitch",
   "description": "A hubot plugin that will spit out Mitch Hedberg quotes",
-  "version": "19.7.16",
+  "version": "25.12.10",
   "author": "Nretnil Kram <signkram@gmail.com>",
   "license": "MIT",
   "keywords": [
@@ -17,16 +17,15 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "coffeescript": "2.4.1",
     "chai": "^4.2.0",
-    "hubot": "3.x",
+    "hubot": "^9.0.0",
     "matchdep": "~2.0.0",
-    "mocha": "^6.1.4",
-    "sinon": "^7.3.2",
-    "sinon-chai": "^3.3.0"
+    "mocha": "^10.0.0",
+    "sinon": "^15.0.0",
+    "sinon-chai": "^3.7.0"
   },
-  "main": "index.coffee",
+  "main": "index.js",
   "scripts": {
-    "test": "script/test || true"
+    "test": "mocha test/*.js"
   }
 }

@@ -2,7 +2,7 @@
 
 A hubot plugin that returns Mitch Hedberg quotes.
 
-See [`src/mitch.coffee`](src/mitch.coffee) for full documentation.
+See [`src/mitch.js`](src/mitch.js) for full documentation.
 
 ## Installation
 
